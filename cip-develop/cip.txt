@@ -1,0 +1,15 @@
+code is poetry;
+es un tema de regado en todas las canchas;
+puede ser que el piso este duro;
+se moja al menos una vez al día;
+jugaste en escocia;
+además siempre estuvimos acostumbrados;
+manejo de la pelota y ductilidad;
+la pelota era más fiel;
+#X obj -303 267 env~;
+#X obj 142 -1 prvu~;
+#X obj 131 118 vu 13 120 empty hp -1 -8 0 10 -66577 -1 1 0;
+#X obj 108 -45 prvu~;
+#X obj 101 118 vu 13 120 empty lp -1 -8 0 10 -66577 -1 0 0;
+#X obj 125 -23 prvu~;
+#X obj 182 113 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144;
