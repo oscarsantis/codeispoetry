@@ -1,0 +1,208 @@
+#N canvas 525 247 853 521 10;TERFERENCIA
+#X obj 355 334 tgl 15 0 render empty render 17 7 0 10 -258113 -1 -1
+0 1;MISION TRANS
+#X obj 328 449 vradio 15 1 0 3 \$0-screen_size empty empty 0 -8 0 10
+-262144 -1 -1 0;
+#X obj 328 372 vradio 15 1 1 5 \$0-dimen empty empty 0 -8 0 10 -262144
+-1 -1 3;CUENCIA TERRUMPIDA
+#X text 349 371 640 x 480;
+#X text 343 385 1000 x 570;
+#X ETER AUTA text 343 400 1024 x 600;
+#N canvas 1 391 BUSTIÓN TÁNEA 815 480 screen 0;
+#X floatatom 122 75 5 0 0 0 - - -, f 5; -ELIGRO ALA TERAL
+#X msg 122 114 reset \, fullscreen \$1 \, create \, 1;
+#N canvas 99 78 450 300 esc 0;
+IPULACIÓN SIN
+#X obj 65 20 gemkeyboard;
+#X obj 65 167 outlet;COMAND
+#X obj 89 71 keyname;
+#X obj 128 96 sel Escape;
+#X obj 65 41 sel 53; NACION COORDI
+#X obj 189 47 sel Escape;
+#X obj 150 22 gemkeyname;
+NAVE GADOR #X connect 0 0 4 0;
+#X connect 2 1 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;ACIAL
+#X connect 6 1 5 0;ÉREO
+#X restore 414 112 pd esc;
+#X obj 122 39 r \$0-screen_size;
+#X msg 327 163 create \, 1;
+#X obj 420 199 loadbang;
+#X obj 327 113 select 1;
+#X msg 420 248 cursor 0;
+#X obj 327 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;URBINA XIAL
+#X obj 327 417 gemwin;
+#X obj 327 39 r render;
+#X msg 421 276 border 0;
+#X msg 481 248 border 1;
+#X msg 595 290 dimen 1024 600;
+#X msg 576 267 dimen 1000 570;
+#X msg 558 244 dimen 640 480;
+#X obj 558 185 r \$0-dimen;
+#X msg 345 199 0 \, destroy;
+#X msg 614 314 dimen 1024 768;
+#X obj 558 220 select 0 1 2 3 4;
+#X floatatom 479 98 0 0 0 0 - - -;
+#X floatatom 474 21 5 0 0 0 - - -, f 5;
+#X obj 483 59 expr $f1*768/1024;
+#X msg 633 338 dimen 1280 960;
+#X connect 0 0 1 0;
+#X connect 1 0 9 0;
+#X connect 2 0 17 0;URBULENCIA#X connect 3 0 0 0;
+#X connect 4 0 9 0;
+#X connect 5 0 7 0;
+#X connect 5 0 15 0;
+#X connect 6 0 4 0;
+#X connect 6 1 17 0;
+#X connect 7 0 9 0;
+#X connect 8 0 6 0;
+#X connect 10 0 8 0;
+#X connect 11 0 9 0;
+#X connect 12 0 9 0;
+#X connect 13 0 9 0;
+#X connect 14 0 9 0;
+#X connect 15 0 9 0;
+#X connect 16 0 19 0;
+#X connect 17 0 9 0;
+#X connect 18 0 9 0;
+#X connect 19 0 15 0;
+#X connect 19 1 14 0;
+#X connect 19 2 13 0;
+#X connect 19 3 18 0;
+#X connect 19 4 23 0;
+#X connect 21 0 22 0;
+#X connect 22 0 20 0;
+#X connect 23 0 9 0;UELO RRUMPIDO
+#X restore 318 62 pd screen;
+#X obj 355 349 nbx 5 15 0 1e+37 0 1 \$0-size_f empty zoom -30 7 0 10
+-262144 -1 -1 0.13 256;
+#X text 343 415 1024 x 768;
+#X text 344 446 no fullscreen;
+#X text 343 462 fullscreen 1;
+#X text 343 477 fullscreen 2;
+#N canvas 175 75 816 645 tu 0;MUNICACIÓN! MUNICACIÓN!
+#X obj 100 130 bng 30 250 50 0 empty empty font 3 15 0 10 -4032 -1
+-1;
+#X obj 300 100 hsl 128 15 0 1 0 0 \$0-r_t00 empty red 5 7 0 10 -258113
+-1 -262144 0 1;LANETA N PNTALLA
+#X obj 300 115 hsl 128 15 0 1 0 0 \$0-g_t00 empty green 5 7 0 10 -4034
+-1 -262144 0 1;BUSTIÓN TÁNEA
+#X obj 300 130 hsl 128 15 0 1 0 0 \$0-b_t00 empty blue 5 7 0 10 -4160
+-1 -262144 0 1;
+#X obj 100 100 tgl 30 1 \$0-gh empty empty 10 15 0 20 -258113 -1 -1
+1 1;
+#X obj 300 145 hsl 128 15 0 1 0 0 \$0-a_t00 empty alpha 5 7 0 10 -
+262144
+OLISION FRAGMEN-258113 -1 0 1;
+#N canvas 273 254 1024 525 line 0;
+#X obj 184 145 tgl 15 0 \$0-txt01_02w \$0-txt01_02r rl 2 7 0 10 -
+261234
+-1 -1 0 6.69291; IOLENTO EGRESO
+#X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_04w \$0-txt01_04r
+ms 40 7 0 10 -261234 -1 -4160 8033 256;
+#X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
+-1 -1;#X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -
+204800
+-1 -1 3948 256;RACAÍDA
+#X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -
+262144
+-1 -4160 0 256;
+#X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_10w \$0-txt01_10r
+ty 40 7 0 10 -262144 -1 -4160 200 256;
+#X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -
+262144
+-1 -4160 17 256;
+#X obj 396 166 / 100;
+#X obj 396 186 / 100;
+#X obj 396 206 / 100;
+#X obj 218 360 * 100;
+TAZOR-CAMBIO
+TAZOR-CAMBIO
+#X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt01_06w \$0-txt01_06r red 5
+7 0 10 -258113 -1 -262144 5400 1;
+#X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt01_07w \$0-txt01_07r green
+5 7 0 10 -4034 -1 -262144 0 1;
+#X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt01_08w \$0-txt01_08r blue
+5 7 0 10 -4160 -1 -262144 0 1;
+#X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt01_09w \$0-txt01_09r alpha
+5 7 0 10 -262144 -258113 -1 9400 1;
+#X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_03w \$0-txt01_03r
+size 55 7 0 10 -204800 -1 -1 7 256;
+#X obj 100 100 tgl 30 1 empty empty 1 10 15 0 20 -258113 -1 -262144
+1 1;
+#X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-257985 -1;
+#X obj 218 292 spigot;
+#X obj 199 145 tgl 15 0 \$0-txt01_01w \$0-txt01_01r ry 2 7 0 10 -
+204800
+-1 -1 0 1;
+#X obj 112 263 metro 1000;
+#X obj 112 298 random 2400;
+#X obj 445 351 msgfile;
+#X obj 759 103 loadbang;
+#X msg 465 298 goto \$1;
+#X msg 447 150 read /home/amencoma/Audio/puredata-set/9.patches/0-
+ptch_osantis/live-set/codeispoetry/cit-txt/cip-visual_poetry_expo.txt
+;
+#X msg 533 241 bang;
+#X obj 613 222 openpanel;
+#X obj 465 247 + 1;
+#X floatatom 465 272 5 0 0 0 - - -, f 5;
+#X msg 829 148 justify center base;
+#X msg 613 242 set font \$1;
+#X msg 613 302 font /home/amencoma/Audio/puredata-set/9.patches/0-
+ptch_osantis/live-set/codeispoetry/droid/DroidSansMono.ttf
+;AL
+TAZOR
+#X obj 613 263 t b a;#X floatatom 717 346 5 0 1 0 - - -, f 5;AZOR
+#X floatatom 751 346 5 0 0 0 - - -, f 5;AZOR
+#X floatatom 786 346 5 0 1 0 - - -, f 5;AZOR
+#X obj 447 102 openpanel;
+#X msg 447 125 set read \$1;
+#X obj 465 217 random 15;
+#X obj 762 370 t b f;
+#X obj 784 389 t b f;
+#X obj 680 587 text3d;
+#X obj 680 524 translateXYZ;
+#X floatatom 749 507 5 -10 10 0 - - -, f 5;
+#X floatatom 713 506 5 -10 10 0 - - -, f 5;
+#X floatatom 786 507 5 -10 10 0 - - -, f 5;
+#X floatatom 822 371 5 0 1 0 - - -, f 5;CCESO OHIBIDO
+#X obj 822 389 t b f;CCESO ENEGADO
+#X obj 753 412 pack 1 2 3 4;
+#X msg 753 434 \$1 \$2 \$3 \$4;
+#X obj 678 460 color 1 0 0 1;
+#X obj 678 482 alpha;
+#X obj 613 199 r \$0-open_ty;
+#X obj 115 62 r \$0-rnd_global;
+#N canvas 707 382 450 300 rnd_rgba 0;
+#X obj 164 127 random 1500;
+#X obj 100 127 metro 500;
+#X obj 100 206 / 1000;
+#X obj 100 186 random 1001;
+#X obj 99 228 pack 0 100;
+#X obj 99 251 line;
+#X obj 174 206 / 1000;
+#X obj 174 186 random 1001;
+#X obj 173 228 pack 0 100;
+#X obj 173 251 line;
+#X obj 247 206 / 1000;
+#X obj 247 186 random 1001;
+#X obj 246 228 pack 0 100;
+#X obj 246 251 line;
+#X obj 320 205 / 1000;
+#X obj 320 185 random 1001;
+#X obj 319 227 pack 0 100;
+#X obj 319 250 line;
+#X obj 99 306 outlet;
+#X obj 173 306 outlet;
+#X obj 246 308 outlet;
+#X obj 319 307 outlet; OLPE N L UELO
+#X obj 100 100 tgl 15 0 \$0-txt01_05w \$0-txt01_05r rn_rgba 1 7 0 10
+-191407 -1 -1 0 1; TERFERENCIA
+#X obj 227 100 r \$0-rgb_time; TERFERENCIA
+#X obj 319 99 r \$0-rgb_smooth; TERFERENCIA
+#X obj 100 55 r \$0-rnd_rgba; TERFERENCIA
