@@ -1,4 +1,4 @@
-#N canvas 16 197 853 524 10;
+#N canvas 362 273 853 524 10;
 #X obj 336 312 tgl 15 0 render empty render 17 7 0 10 -258113 -1 -1
 0 1;
 #X obj 336 344 vradio 15 1 0 5 \$0-dimen empty empty 0 -8 0 10 -262144
@@ -108,7 +108,7 @@ ms 40 7 0 10 -261234 -1 -4160 9000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_10w \$0-txt01_10r
-ty 40 7 0 10 -262144 -1 -4160 -100 256;
+ty 40 7 0 10 -262144 -1 -4160 -300 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -145,7 +145,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -426,7 +426,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -630,7 +630,7 @@ ms 40 7 0 10 -261234 -1 -4160 9000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt03_10w \$0-txt03_10r
-ty 40 7 0 10 -262144 -1 -4160 -200 256;
+ty 40 7 0 10 -262144 -1 -4160 -100 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -638,13 +638,13 @@ ty 40 7 0 10 -262144 -1 -4160 -200 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt03_06w \$0-txt03_06r red 5
-7 0 10 -258113 -1 -262144 4039 1;
+7 0 10 -258113 -1 -262144 10808 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt03_07w \$0-txt03_07r green
-5 7 0 10 -4034 -1 -262144 5017 1;
+5 7 0 10 -4034 -1 -262144 11151 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt03_08w \$0-txt03_08r blue
-5 7 0 10 -4160 -1 -262144 2718 1;
+5 7 0 10 -4160 -1 -262144 5448 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt03_09w \$0-txt03_09r alpha
-5 7 0 10 -262144 -258113 -1 2108 1;
+5 7 0 10 -262144 -258113 -1 4483 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt03_03w \$0-txt03_03r
 size 55 7 0 10 -204800 -1 -1 6 256;
 #X obj 100 100 tgl 30 1 empty empty 3 10 15 0 20 -258113 -1 -262144
@@ -667,7 +667,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -908,7 +908,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -1149,7 +1149,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -1390,7 +1390,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -1648,7 +1648,7 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X floatatom 465 272 5 0 0 0 - - -, f 5;
 #X msg 829 148 justify center base;
 #X msg 613 242 set font \$1;
-#X msg 613 302 font /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+#X msg 613 302 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
 ;
 #X obj 613 263 t b a;
 #X floatatom 717 346 5 0 1 0 - - -, f 5;
@@ -1902,23 +1902,23 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X obj 2 125 openpanel;
 #X obj 91 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 151 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip02.jpg
+#X msg 91 151 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip02.jpg
 ;
 #X obj 3 171 openpanel;
 #X obj 91 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 194 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip03.jpg
+#X msg 91 194 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip03.jpg
 ;
 #X obj 3 216 openpanel;
 #X obj 91 216 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 238 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip04.jpg
+#X msg 91 238 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip04.jpg
 ;
 #X msg 2 102 set open \$1;
 #X msg 2 147 set open \$1;
 #X msg 3 193 set open \$1;
 #X msg 3 238 set open \$1;
-#X msg 91 107 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip01.jpg
+#X msg 91 107 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip01.jpg
 ;
 #X obj 135 0 bng 15 250 50 0 empty empty 10 1 8 0 10 -204800 -1 -1
 ;
@@ -1945,25 +1945,25 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 -1;
 #X obj 91 304 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 326 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip06.jpg
+#X msg 91 326 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip06.jpg
 ;
 #X obj 91 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 369 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip07.jpg
+#X msg 91 369 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip07.jpg
 ;
 #X obj 91 392 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 91 413 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip08.jpg
+#X msg 91 413 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip08.jpg
 ;
-#X msg 91 282 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip05.jpg
+#X msg 91 282 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip05.jpg
 ;
 #X obj 92 436 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 92 457 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip09.jpg
+#X msg 92 457 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip09.jpg
 ;
 #X obj 92 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 92 501 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip10.jpg
+#X msg 92 501 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip10.jpg
 ;
 #X obj 471 84 openpanel;
 #X obj 553 96 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -1971,23 +1971,23 @@ size 55 7 0 10 -204800 -1 -1 6 256;
 #X obj 471 129 openpanel;
 #X obj 553 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 553 160 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip12.jpg
+#X msg 553 160 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip12.jpg
 ;
 #X obj 472 175 openpanel;
 #X obj 553 182 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 553 203 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip13.jpg
+#X msg 553 203 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip13.jpg
 ;
 #X obj 472 220 openpanel;
 #X obj 553 225 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 553 247 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip14.jpg
+#X msg 553 247 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip14.jpg
 ;
 #X msg 471 106 set open \$1;
 #X msg 471 151 set open \$1;
 #X msg 472 197 set open \$1;
 #X msg 472 242 set open \$1;
-#X msg 553 116 open /home/oscar/Audio/puredata-set/9.patches/0-ptch_osantis/live-set/cip-expo/cip-expo_img/cip11.jpg
+#X msg 553 116 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip11.jpg
 ;
 #X obj 472 264 openpanel;
 #X msg 472 286 set open \$1;
