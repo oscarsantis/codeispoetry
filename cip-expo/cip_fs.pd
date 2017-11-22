@@ -1,9 +1,9 @@
-#N canvas 83 75 853 524 10;
-#X obj 333 384 vradio 15 1 1 5 \$0-dimen \$0-bang_dimen empty 0 -8
+#N canvas 125 203 853 524 10;
+#X obj 346 384 vradio 15 1 1 5 \$0-dimen \$0-bang_dimen empty 0 -8
 0 10 -262144 -258113 -1 2;
-#X text 356 383 640 x 480;
-#X text 350 397 1000 x 570;
-#N canvas 41 119 807 480 screen 0;
+#X text 369 383 640 x 480;
+#X text 363 397 1000 x 570;
+#N canvas 281 400 652 480 screen 0;
 #X floatatom 24 74 5 0 0 0 - - -, f 5;
 #X msg 24 97 reset \, fullscreen \$1 \, create \, 1;
 #N canvas 97 75 450 300 esc 0;
@@ -20,75 +20,65 @@
 #X connect 4 0 1 0;
 #X connect 5 0 1 0;
 #X connect 6 1 5 0;
-#X restore 221 129 pd esc;
+#X restore 169 155 pd esc;
 #X obj 24 38 r \$0-screen_size;
-#X msg 136 238 create \, 1;
+#X msg 149 240 create \, 1;
 #X obj 96 202 select 1;
-#X msg 326 202 cursor 0;
+#X msg 434 254 cursor 0;
 #X obj 96 426 gemwin;
-#X msg 251 240 border 0;
-#X msg 126 321 border 1;
-#X msg 345 338 dimen 1000 570;
-#X msg 327 315 dimen 640 480;
-#X obj 327 256 r \$0-dimen;
+#X msg 371 325 dimen 1000 570;
+#X msg 353 302 dimen 640 480;
+#X obj 353 254 r \$0-dimen;
 #X msg 96 290 0 \, destroy;
-#X obj 327 291 select 0 1 2 3 4;
-#X msg 383 385 dimen 1024 960;
-#X msg 364 361 dimen 1024 768;
+#X obj 353 278 select 0 1 2 3 4;
+#X msg 409 372 dimen 1024 960;
+#X msg 390 348 dimen 1024 768;
 #X obj 278 107 t b b b b b;
 #X obj 278 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 402 409 dimen 1280 1024;
+#X msg 428 396 dimen 1280 1024;
 #X obj 278 60 r \$0-monitor_02;
 #X obj 96 128 r \$0-render;
-#X obj 157 202 s \$0-render_state;
-#X msg 169 158 1;
-#X msg 255 155 0;
-#X obj 341 146 s \$0-bang_dimen;
-#X msg 251 270 border 1;
-#X msg 473 75 reset \, dimen 1024 768 \, border 1 \, cursor 0 \, create
-\, 1;
-#X msg 472 53 reset \, dimen 640 480 \, border 1 \, cursor 0 \, create
-\, 1;
-#X msg 478 101 reset \, dimen 1000 570 \, border 1 \, cursor 0 \, create
-\, 1;
-#X msg 222 325 offset 1023 0;
+#X obj 169 202 s \$0-render_state;
+#X msg 169 177 1;
+#X msg 237 177 0;
+#X obj 352 140 s \$0-bang_dimen;
+#X msg 296 175 offset 1023 0;
+#X msg 315 223 border 0;
+#X msg 186 265 border 1;
 #X connect 0 0 1 0;
 #X connect 1 0 7 0;
-#X connect 2 0 23 0;
+#X connect 2 0 21 0;
 #X connect 3 0 0 0;
 #X connect 4 0 7 0;
-#X connect 5 0 13 0;
+#X connect 5 0 11 0;
 #X connect 5 1 4 0;
 #X connect 6 0 7 0;
 #X connect 8 0 7 0;
 #X connect 9 0 7 0;
-#X connect 10 0 7 0;
+#X connect 10 0 12 0;
 #X connect 11 0 7 0;
-#X connect 12 0 14 0;
+#X connect 12 0 9 0;
+#X connect 12 1 8 0;
+#X connect 12 2 14 0;
+#X connect 12 3 13 0;
+#X connect 12 4 17 0;
 #X connect 13 0 7 0;
-#X connect 14 0 11 0;
-#X connect 14 1 10 0;
-#X connect 14 2 16 0;
-#X connect 14 3 15 0;
-#X connect 14 4 19 0;
-#X connect 15 0 7 0;
-#X connect 16 0 7 0;
-#X connect 17 0 24 0;
-#X connect 17 1 30 0;
-#X connect 17 2 8 0;
-#X connect 17 3 6 0;
-#X connect 17 4 25 0;
-#X connect 18 0 17 0;
-#X connect 19 0 7 0;
-#X connect 20 0 18 0;
-#X connect 21 0 5 0;
-#X connect 23 0 22 0;
-#X connect 24 0 22 0;
+#X connect 14 0 7 0;
+#X connect 15 0 22 0;
+#X connect 15 1 24 0;
+#X connect 15 2 25 0;
+#X connect 15 3 6 0;
+#X connect 15 4 23 0;
+#X connect 16 0 15 0;
+#X connect 17 0 7 0;
+#X connect 18 0 16 0;
+#X connect 19 0 5 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 0;
+#X connect 24 0 7 0;
+#X connect 25 0 7 0;
 #X connect 26 0 7 0;
-#X connect 27 0 7 0;
-#X connect 28 0 7 0;
-#X connect 30 0 7 0;
 #X restore 318 62 pd screen;
 #N canvas 175 75 816 524 tu 0;
 #X obj 100 130 bng 30 250 50 0 empty empty font 3 15 0 10 -4032 -1
@@ -121,7 +111,7 @@
 #X obj 130 100 nbx 5 15 0 1e+37 0 1 empty empty ms 40 7 0 10 -191407
 -1 -4160 2000 256;
 #X obj 130 115 nbx 5 15 0 1e+37 0 1 \$0-txt00_71w \$0-txt00_71r ln
-40 7 0 10 -191407 -1 -4160 0 256;
+40 7 0 10 -191407 -1 -4160 1300 256;
 #X obj 724 173 / 1000;
 #X obj 724 153 random 1001;
 #X obj 723 195 pack 0 100;
@@ -147,7 +137,7 @@
 #X obj 184 145 tgl 15 0 \$0-txt02_02w \$0-txt02_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt02_04w \$0-txt02_04r
-ms 40 7 0 10 -261234 -1 -4160 4000 256;
+ms 40 7 0 10 -261234 -1 -4160 1500 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -155,7 +145,7 @@ ms 40 7 0 10 -261234 -1 -4160 4000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt02_10w \$0-txt02_10r
-ty 40 7 0 10 -262144 -1 -4160 -100 256;
+ty 40 7 0 10 -262144 -1 -4160 333 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -163,15 +153,15 @@ ty 40 7 0 10 -262144 -1 -4160 -100 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt02_06w \$0-txt02_06r red 5
-7 0 10 -258113 -1 -262144 3130 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt02_07w \$0-txt02_07r green
-5 7 0 10 -4034 -1 -262144 4567 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt02_08w \$0-txt02_08r blue
-5 7 0 10 -4160 -1 -262144 2163 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt02_09w \$0-txt02_09r alpha
-5 7 0 10 -262144 -258113 -1 506 1;
+5 7 0 10 -262144 -258113 -1 9100 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt02_03w \$0-txt02_03r
-size 55 7 0 10 -204800 -1 -1 4.0752 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 2 10 15 0 20 -258113 -1 -262144
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -374,7 +364,7 @@ size 55 7 0 10 -204800 -1 -1 4.0752 256;
 #X obj 184 145 tgl 15 0 \$0-txt03_02w \$0-txt03_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt03_04w \$0-txt03_04r
-ms 40 7 0 10 -261234 -1 -4160 1000 256;
+ms 40 7 0 10 -261234 -1 -4160 200 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -382,7 +372,7 @@ ms 40 7 0 10 -261234 -1 -4160 1000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt03_10w \$0-txt03_10r
-ty 40 7 0 10 -262144 -1 -4160 94.36 256;
+ty 40 7 0 10 -262144 -1 -4160 -260 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -390,15 +380,15 @@ ty 40 7 0 10 -262144 -1 -4160 94.36 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt03_06w \$0-txt03_06r red 5
-7 0 10 -258113 -1 -262144 10280 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt03_07w \$0-txt03_07r green
-5 7 0 10 -4034 -1 -262144 3976 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt03_08w \$0-txt03_08r blue
-5 7 0 10 -4160 -1 -262144 71 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt03_09w \$0-txt03_09r alpha
-5 7 0 10 -262144 -258113 -1 7683 1;
+5 7 0 10 -262144 -258113 -1 3700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt03_03w \$0-txt03_03r
-size 55 7 0 10 -204800 -1 -1 6.0304 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 3 10 15 0 20 -258113 -1 -262144
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -601,7 +591,7 @@ size 55 7 0 10 -204800 -1 -1 6.0304 256;
 #X obj 184 145 tgl 15 0 \$0-txt05_02w \$0-txt05_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt05_04w \$0-txt05_04r
-ms 40 7 0 10 -261234 -1 -4160 1000 256;
+ms 40 7 0 10 -261234 -1 -4160 18000 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -609,7 +599,7 @@ ms 40 7 0 10 -261234 -1 -4160 1000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt05_10w \$0-txt05_10r
-ty 40 7 0 10 -262144 -1 -4160 -288.72 256;
+ty 40 7 0 10 -262144 -1 -4160 181 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -617,15 +607,15 @@ ty 40 7 0 10 -262144 -1 -4160 -288.72 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt05_06w \$0-txt05_06r red 5
-7 0 10 -258113 -1 -262144 11478 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt05_07w \$0-txt05_07r green
-5 7 0 10 -4034 -1 -262144 3073 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt05_08w \$0-txt05_08r blue
-5 7 0 10 -4160 -1 -262144 3827 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt05_09w \$0-txt05_09r alpha
-5 7 0 10 -262144 -258113 -1 543 1;
+5 7 0 10 -262144 -258113 -1 12700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt05_03w \$0-txt05_03r
-size 55 7 0 10 -204800 -1 -1 6.0304 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 5 10 15 0 20 -258113 -1 -262144
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -828,7 +818,7 @@ size 55 7 0 10 -204800 -1 -1 6.0304 256;
 #X obj 184 145 tgl 15 0 \$0-txt06_02w \$0-txt06_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt06_04w \$0-txt06_04r
-ms 40 7 0 10 -261234 -1 -4160 1000 256;
+ms 40 7 0 10 -261234 -1 -4160 19000 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -836,7 +826,7 @@ ms 40 7 0 10 -261234 -1 -4160 1000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt06_10w \$0-txt06_10r
-ty 40 7 0 10 -262144 -1 -4160 200 256;
+ty 40 7 0 10 -262144 -1 -4160 -59 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -844,15 +834,15 @@ ty 40 7 0 10 -262144 -1 -4160 200 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt06_06w \$0-txt06_06r red 5
-7 0 10 -258113 -1 -262144 6317 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt06_07w \$0-txt06_07r green
-5 7 0 10 -4034 -1 -262144 8916 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt06_08w \$0-txt06_08r blue
-5 7 0 10 -4160 -1 -262144 10979 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt06_09w \$0-txt06_09r alpha
-5 7 0 10 -262144 -258113 -1 4556 1;
+5 7 0 10 -262144 -258113 -1 12700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt06_03w \$0-txt06_03r
-size 55 7 0 10 -204800 -1 -1 6.0304 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 6 10 15 0 20 -258113 -1 -228856
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1055,7 +1045,7 @@ size 55 7 0 10 -204800 -1 -1 6.0304 256;
 #X obj 184 145 tgl 15 0 \$0-txt07_02w \$0-txt07_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt07_04w \$0-txt07_04r
-ms 40 7 0 10 -261234 -1 -4160 1000 256;
+ms 40 7 0 10 -261234 -1 -4160 12000 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -1063,7 +1053,7 @@ ms 40 7 0 10 -261234 -1 -4160 1000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt07_10w \$0-txt07_10r
-ty 40 7 0 10 -262144 -1 -4160 -200 256;
+ty 40 7 0 10 -262144 -1 -4160 30 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -1071,15 +1061,15 @@ ty 40 7 0 10 -262144 -1 -4160 -200 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt07_06w \$0-txt07_06r red 5
-7 0 10 -258113 -1 -262144 6868 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt07_07w \$0-txt07_07r green
-5 7 0 10 -4034 -1 -262144 10732 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt07_08w \$0-txt07_08r blue
-5 7 0 10 -4160 -1 -262144 7595 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt07_09w \$0-txt07_09r alpha
-5 7 0 10 -262144 -258113 -1 11933 1;
+5 7 0 10 -262144 -258113 -1 12700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt07_03w \$0-txt07_03r
-size 55 7 0 10 -204800 -1 -1 6.0304 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 7 10 15 0 20 -258113 -1 -228856
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1299,7 +1289,7 @@ size 55 7 0 10 -204800 -1 -1 6.0304 256;
 #X obj 184 145 tgl 15 0 \$0-txt04_02w \$0-txt04_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt04_04w \$0-txt04_04r
-ms 40 7 0 10 -261234 -1 -4160 1000 256;
+ms 40 7 0 10 -261234 -1 -4160 16000 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -1307,7 +1297,7 @@ ms 40 7 0 10 -261234 -1 -4160 1000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt04_10w \$0-txt04_10r
-ty 40 7 0 10 -262144 -1 -4160 -100 256;
+ty 40 7 0 10 -262144 -1 -4160 -196 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -1315,15 +1305,15 @@ ty 40 7 0 10 -262144 -1 -4160 -100 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt04_06w \$0-txt04_06r red 5
-7 0 10 -258113 -1 -262144 5169 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt04_07w \$0-txt04_07r green
-5 7 0 10 -4034 -1 -262144 1937 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt04_08w \$0-txt04_08r blue
-5 7 0 10 -4160 -1 -262144 6740 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt04_09w \$0-txt04_09r alpha
-5 7 0 10 -262144 -258113 -1 12257 1;
+5 7 0 10 -262144 -258113 -1 12700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt04_03w \$0-txt04_03r
-size 55 7 0 10 -204800 -1 -1 5.128 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 4 10 15 0 20 -258113 -1 -262144
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1523,13 +1513,14 @@ size 55 7 0 10 -204800 -1 -1 5.128 256;
 #X coords 0 -1 1 1 330 60 2 100 100;
 #X restore 100 340 pd line 1;
 #X obj 474 526 t b a;
-#X msg 474 559 font cip-expo_fonts/NotoMono-Regular.ttf;
+#X msg 474 559 font /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_fonts/NotoMono-Regular.ttf
+;
 #X obj 507 444 loadbang;
 #N canvas 0 75 1024 525 line 0;
 #X obj 184 145 tgl 15 0 \$0-txt01_02w \$0-txt01_02r rl 2 7 0 10 -261234
 -1 -1 0 6.69291;
 #X obj 130 145 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_04w \$0-txt01_04r
-ms 40 7 0 10 -261234 -1 -4160 4000 256;
+ms 40 7 0 10 -261234 -1 -4160 16000 256;
 #X obj 169 100 bng 15 250 50 0 empty empty text -35 7 0 10 -204800
 -1 -1;
 #X obj 130 130 nbx 5 15 0 1e+37 0 1 empty empty lines 55 7 0 10 -204800
@@ -1537,7 +1528,7 @@ ms 40 7 0 10 -261234 -1 -4160 4000 256;
 #X obj 239 100 nbx 5 15 -1e+37 1e+37 0 1 empty empty tx 40 7 0 10 -262144
 -1 -4160 0 256;
 #X obj 239 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_10w \$0-txt01_10r
-ty 40 7 0 10 -262144 -1 -4160 -100 256;
+ty 40 7 0 10 -262144 -1 -4160 -373 256;
 #X obj 239 130 nbx 5 15 -1e+37 1e+37 0 1 empty empty tz 40 7 0 10 -262144
 -1 -4160 17 256;
 #X obj 396 166 / 100;
@@ -1545,15 +1536,15 @@ ty 40 7 0 10 -262144 -1 -4160 -100 256;
 #X obj 396 206 / 100;
 #X obj 218 360 * 100;
 #X obj 300 100 hsl 128 15 0 1 0 1 \$0-txt01_06w \$0-txt01_06r red 5
-7 0 10 -258113 -1 -262144 7980 1;
+7 0 10 -258113 -1 -262144 12700 1;
 #X obj 300 115 hsl 128 15 0 1 0 1 \$0-txt01_07w \$0-txt01_07r green
-5 7 0 10 -4034 -1 -262144 3622 1;
+5 7 0 10 -4034 -1 -262144 12700 1;
 #X obj 300 130 hsl 128 15 0 1 0 1 \$0-txt01_08w \$0-txt01_08r blue
-5 7 0 10 -4160 -1 -262144 4255 1;
+5 7 0 10 -4160 -1 -262144 12700 1;
 #X obj 300 145 hsl 128 15 0 1 0 1 \$0-txt01_09w \$0-txt01_09r alpha
-5 7 0 10 -262144 -258113 -1 351 1;
+5 7 0 10 -262144 -258113 -1 12700 1;
 #X obj 130 115 nbx 5 15 -1e+37 1e+37 0 1 \$0-txt01_03w \$0-txt01_03r
-size 55 7 0 10 -204800 -1 -1 4.2256 256;
+size 55 7 0 10 -204800 -1 -1 5 256;
 #X obj 100 100 tgl 30 1 empty empty 1 10 15 0 20 -258113 -1 -262144
 1 1;
 #X obj 115 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1812,7 +1803,7 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X obj 105 0 bng 15 250 50 0 empty empty 8 5 8 0 10 -204800 -1 -1;
 #X obj 90 0 bng 15 250 50 0 empty empty 7 5 8 0 10 -204800 -1 -1;
 #X obj 0 15 hradio 15 1 1 14 empty empty empty 4 7 0 10 -262144 -4032
--1 6;
+-1 1;
 #X obj 91 87 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 2 125 openpanel;
@@ -1887,20 +1878,34 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 ;
 #X obj 188 60 select 0 1 2 3 4 5 6 7 8 9 10 11 12 13;
 #X obj 728 84 random 13;
-#X msg 91 107 open cip-expo_img/cip01.jpg;
-#X msg 89 151 open cip-expo_img/cip02.jpg;
-#X msg 91 194 open cip-expo_img/cip03.jpg;
-#X msg 91 238 open cip-expo_img/cip04.jpg;
-#X msg 91 282 open cip-expo_img/cip05.jpg;
-#X msg 91 326 open cip-expo_img/cip06.jpg;
-#X msg 91 369 open cip-expo_img/cip07.jpg;
-#X msg 457 385 open cip-expo_img/cip14.jpg;
-#X msg 457 341 open cip-expo_img/cip13.jpg;
-#X msg 457 298 open cip-expo_img/cip12.jpg;
-#X msg 457 254 open cip-expo_img/cip11.jpg;
-#X msg 454 205 open cip-expo_img/cip10.jpg;
-#X msg 454 161 open cip-expo_img/cip09.jpg;
-#X msg 453 117 open cip-expo_img/cip08.jpg;
+#X msg 91 107 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip01.jpg
+;
+#X msg 89 151 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip02.jpg
+;
+#X msg 91 194 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip03.jpg
+;
+#X msg 91 238 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip04.jpg
+;
+#X msg 91 282 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip05.jpg
+;
+#X msg 91 326 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip06.jpg
+;
+#X msg 91 369 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip07.jpg
+;
+#X msg 457 385 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip14.jpg
+;
+#X msg 457 341 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip13.jpg
+;
+#X msg 457 298 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip12.jpg
+;
+#X msg 457 254 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip11.jpg
+;
+#X msg 454 205 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip10.jpg
+;
+#X msg 454 161 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip09.jpg
+;
+#X msg 453 117 open /home/oscar/Pd/patches/os-patches/codeispoetry/cip-expo/cip-expo_img/cip08.jpg
+;
 #X connect 0 0 17 0;
 #X connect 1 0 11 0;
 #X connect 2 0 13 0;
@@ -2177,7 +2182,7 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X obj 105 496 / 100;
 #X obj 24 187 pix_threshold;
 #X msg 131 141 set \$1 \$2 \$3;
-#X msg 131 163 0.503197 0.0827371 0.00888189;
+#X msg 131 163 0 0 0;
 #X obj 131 117 pack \$1 \$2 \$3;
 #X floatatom 273 75 5 0 0 0 - - -, f 5;
 #X floatatom 310 75 5 0 0 0 - - -, f 5;
@@ -2193,7 +2198,7 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X obj 158 412 + 1;
 #X obj 129 583 pack \$1 \$2 \$3;
 #X msg 121 604 set \$1 \$2 \$3;
-#X msg 69 627 1.3572 1.188 1.3572;
+#X msg 69 627 3 2 -8;
 #X obj 183 555 t b f;
 #X obj 144 555 t b f;
 #X obj 69 598 b;
@@ -2373,53 +2378,53 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X obj 289 190 tgl 15 0 \$0-smooth empty smooth 17 7 0 10 -262144 -1
 -1 0 1;
 #X obj 103 175 hsl 128 15 0 500 0 1 \$0-cip01_6w \$0-cip01_6r offset
-5 7 0 10 -262144 -258113 -1 9714 1;
+5 7 0 10 -262144 -258113 -1 1100 1;
 #X obj 103 190 hsl 128 15 0 50 0 1 \$0-cip01_7w \$0-cip01_7r gap 5
-7 0 10 -262144 -258113 -1 10793 1;
+7 0 10 -262144 -258113 -1 700 1;
 #X obj 103 205 hsl 128 15 0 127 0 0 \$0-cip01_8w \$0-cip01_8r scanline_post
-5 7 0 10 -262144 -258113 -1 12700 1;
+5 7 0 10 -262144 -258113 -1 0 1;
 #X obj 103 100 hsl 128 15 0 1 0 0 empty empty threshold 4 7 0 10 -262144
 -258113 -1 0 1;
 #X obj 103 160 hsl 128 15 0 127 0 0 \$0-cip01_5w \$0-cip01_5r scanline_pre
-5 7 0 10 -262144 -258113 -1 2 1;
+5 7 0 10 -262144 -258113 -1 300 1;
 #X obj 103 115 hsl 128 15 0 1 0 1 \$0-cip01_1w \$0-cip01_1r red_th
-5 7 0 10 -258113 -1 -262144 6391 1;
+5 7 0 10 -258113 -1 -262144 0 1;
 #X obj 103 130 hsl 128 15 0 1 0 1 \$0-cip01_2w \$0-cip01_2r green_th
-5 7 0 10 -4034 -1 -262144 1051 1;
+5 7 0 10 -4034 -1 -262144 0 1;
 #X obj 103 145 hsl 128 15 0 1 0 1 \$0-cip01_3w \$0-cip01_3r blue_th
-5 7 0 10 -4160 -1 -262144 113 1;
+5 7 0 10 -4160 -1 -262144 0 1;
 #X obj 103 220 hsl 128 15 0 99 0 0 \$0-cip01_9w \$0-cip01_9r motion_blur
-5 7 0 10 -262144 -258113 -1 3875 1;
+5 7 0 10 -262144 -258113 -1 3100 1;
 #X obj 289 160 hradio 15 1 1 4 \$0-scanline01b empty empty 0 -8 0 10
 -162280 -258113 -1 0;
 #X obj 289 205 hradio 15 1 1 4 \$0-scanline02b empty empty 0 -8 0 10
--162280 -258113 -1 2.9436;
+-162280 -258113 -1 0;
 #X obj 103 250 hsl 128 15 20 -107 0 1 \$0-cip01_11w \$0-cip01_11r red_gn
-5 7 0 10 -258113 -1 -262144 1864 1;
+5 7 0 10 -258113 -1 -262144 1700 1;
 #X obj 103 265 hsl 128 15 20 -107 0 1 \$0-cip01_12w \$0-cip01_12r green_gn
-5 7 0 10 -4034 -1 -262144 1881 1;
+5 7 0 10 -4034 -1 -262144 1800 1;
 #X obj 103 280 hsl 128 15 20 -107 0 1 \$0-cip01_13w \$0-cip01_13r blue_gn
-5 7 0 10 -4160 -1 -262144 1864 1;
+5 7 0 10 -4160 -1 -262144 2800 1;
 #X obj 104 235 hsl 127 15 20 -107 0 0 empty empty gain 5 7 0 10 -262144
 -258113 -1 0 1;
 #X obj 233 115 nbx 5 15 -1e+37 1e+37 0 0 \$0-t_r empty empty 0 -8 0
-10 -262144 -1 -1 0.503197 256;
+10 -262144 -1 -1 0 256;
 #X obj 233 130 nbx 5 15 -1e+37 1e+37 0 0 \$0-t_g empty empty 0 -8 0
-10 -262144 -1 -1 0.0827371 256;
+10 -262144 -1 -1 0 256;
 #X obj 233 145 nbx 5 15 -1e+37 1e+37 0 0 \$0-t_b empty empty 0 -8 0
-10 -262144 -1 -1 0.00888189 256;
+10 -262144 -1 -1 0 256;
 #X obj 233 100 nbx 5 15 -1e+37 1e+37 0 0 \$0-pass empty empty 0 -8
 0 10 -262144 -1 -1 0 256;
 #X obj 233 160 nbx 5 15 -1e+37 1e+37 0 0 \$0-scanline01 empty empty
-0 -8 0 10 -262144 -1 -1 0.0188 256;
+0 -8 0 10 -262144 -1 -1 3 256;
 #X obj 233 175 nbx 5 15 -1e+37 1e+37 0 0 \$0-offset empty empty 0 -8
-0 10 -262144 -1 -1 382.436 256;
+0 10 -262144 -1 -1 43.3071 256;
 #X obj 233 190 nbx 5 15 -1e+37 1e+37 0 0 \$0-gap empty empty 0 -8 0
-10 -262144 -1 -1 42.4929 256;
+10 -262144 -1 -1 2.75591 256;
 #X obj 233 205 nbx 5 15 -1e+37 1e+37 0 0 \$0-scanline02 empty empty
-0 -8 0 10 -262144 -1 -1 127 256;
+0 -8 0 10 -262144 -1 -1 0 256;
 #X obj 233 220 nbx 5 15 -1e+37 1e+37 0 0 \$0-mblur empty empty 0 -8
-0 10 -262144 -1 -1 30.2043 256;
+0 10 -262144 -1 -1 24.1654 256;
 #X obj 185 337 s \$0-g_r;
 #X obj 198 361 s \$0-g_g;
 #X obj 210 385 s \$0-g_b;
@@ -2454,12 +2459,12 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X coords 0 -1 1 1 255 195 2 100 100;
 #X restore 11 78 pd video;
 #X obj 272 206 hsl 205 30 0 1 0 1 \$0-mix empty camera-image 75 15
-0 10 -257985 -258113 -1 10600 1;
+0 10 -257985 -258113 -1 10000 1;
 #N canvas 210 275 501 347 snap 0;
 #X obj 100 232 nbx 2 15 1 16 0 1 empty empty empty 3 -7 0 10 -204800
--1 -1 14 256;
+-1 -1 7 256;
 #X obj 355 115 nbx 2 15 1 16 0 0 empty empty empty 0 -8 0 10 -257985
--1 -1 14 256;
+-1 -1 7 256;
 #X obj 340 115 bng 15 250 50 0 empty empty s 5 7 0 10 -258113 -4160
 -262144;
 #N canvas 16 408 400 271 snap_text 0;
@@ -4103,7 +4108,7 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X restore 135 231 pd snap_text;
 #X obj 100 196 + 1;
 #X obj 100 115 hradio 15 1 0 16 empty empty code 5 -7 0 10 -257985
--4160 -4160 13;
+-4160 -4160 6;
 #X obj 100 73 r \$0-glb_set;
 #X obj 15 196 s \$0-text_set;
 #X obj 73 149 t b f;
@@ -4120,9 +4125,9 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X restore 12 48 pd snap;
 #N canvas 428 410 538 386 snap 0;
 #X obj 100 235 nbx 2 15 1 16 0 1 empty empty empty 3 -7 0 10 -204800
--1 -1 14 256;
+-1 -1 7 256;
 #X obj 355 115 nbx 2 15 1 16 0 0 empty empty empty 0 -8 0 10 -257985
--1 -1 14 256;
+-1 -1 7 256;
 #X obj 100 198 + 1;
 #N canvas 605 246 400 271 snap_img 0;
 #X obj 90 50 inlet;
@@ -4461,7 +4466,7 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X connect 2 0 5 1;
 #X restore 100 261 pd snap_img;
 #X obj 100 115 hradio 15 1 0 16 empty empty image 5 -7 0 10 -257985
--4160 -4160 13;
+-4160 -4160 6;
 #X obj 340 115 bng 15 250 50 0 empty empty s 5 7 0 10 -258113 -4160
 -262144;
 #X obj 100 70 r \$0-glb_set;
@@ -4475,9 +4480,9 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X coords 0 -1 1 1 283 30 2 100 100;
 #X restore 12 18 pd snap;
 #X obj 12 3 hradio 15 1 0 16 \$0-glb_set \$0-glb_set_rnd empty 7 7
-0 10 -257985 -4160 -1 13;
+0 10 -257985 -4160 -1 6;
 #N canvas 610 348 450 300 rndm 0;
-#X obj 100 100 tgl 15 1 empty empty rt 2 7 0 10 -203904 -1 -1 1 1;
+#X obj 100 100 tgl 15 1 empty empty rt 2 7 0 10 -203904 -1 -1 0 1;
 #X obj 117 200 random 16;
 #X obj 117 176 metro 30000;
 #X obj 115 100 nbx 7 15 0 1e+37 0 1 empty empty ms 55 7 0 10 -203904
@@ -4491,14 +4496,14 @@ size 55 7 0 10 -204800 -1 -1 4.2256 256;
 #X connect 3 0 2 1;
 #X coords 0 -1 1 1 145 15 2 100 100;
 #X restore 252 3 pd rndm;
-#X obj 333 459 vradio 15 1 0 2 \$0-screen_size empty empty 0 -8 0 10
+#X obj 346 459 vradio 15 1 0 2 \$0-screen_size empty empty 0 -8 0 10
 -204800 -1 -1 0;
-#X text 350 459 normal;
-#X text 350 474 fullscreen;
-#X text 350 442 1280 x 1024;
-#X text 351 428 1024 x 960;
-#X text 350 412 1024 x 768;
-#X obj 333 339 bng 15 250 50 1 \$0-monitor_02 empty monitor_2 20 7
+#X text 363 459 normal;
+#X text 363 474 fullscreen;
+#X text 363 442 1280 x 1024;
+#X text 364 428 1024 x 960;
+#X text 363 412 1024 x 768;
+#X obj 346 339 bng 15 250 50 0 \$0-monitor_02 empty monitor_2 20 7
 0 10 -262144 -1 -1;
-#X obj 333 354 vradio 15 1 0 2 \$0-render \$0-render_state render 20
+#X obj 346 354 vradio 15 1 0 2 \$0-render \$0-render_state render 20
 7 0 10 -258113 -262144 -1 0;
